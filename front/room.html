@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" >
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="Author" content="zz_avatar@qq.com">
+    <meta name="Keywords" content="">
+    <meta name="Description" content="">
+	<meta http-equiv="Content-Security-Policy" content="default-src 'self' 'unsafe-inline';img-src 'self' http://*.yunnan.cn https://*.yunnan.cn data:;connect-src 'self' wss://webapp.yunnan.cn ">
+	<!-- saved from url=(0014)about:internet -->
+  <title>NOVA网络直播系统</title>
+  <link rel="stylesheet" type="text/css" href="css/index.css">
+  <link rel="stylesheet" type="text/css" href="css/jquery.datetimepicker.css">
+  <script type="text/javascript" src="/new/s/js/jquery-1.12.4.min.js"></script>
+  <script type="text/javascript" src="js/jquery.datetimepicker.full.min.js"></script>
+  <script type="text/javascript" src="js/layer/layer.js"></script>
+  <script type="text/javascript" src="js/room.js"></script>
+
+</head>
+<body>
+
+<center id="desk">
+<div class="live">
+<div id="0" class="cells">
+<span class="room_name">名称：<INPUT TYPE="text" id="room_name" placeholder="开房/查询共用"></span><span class="endtime">结束时间：<INPUT TYPE="text" id="endtime" value="" class="et_input"></span><span class="opts"><input type="button" class="btn" onclick="add()" value="开房"/>&nbsp;|&nbsp;筛选：<SELECT id="open">
+	<OPTION VALUE="1" SELECTED>进行中</OPTION>
+	<OPTION VALUE="0">已结束</OPTION>
+</SELECT><input type="button" class="btn" onclick="search()" value="查询"/><input type="button" class="btn" onclick="quit()" value="退出"/></span>
+</div>
+
+<div id="list" class="live">
+
+</div>
+</div>
+<div id="sign" style="clear:both;color:#7c7c7c" onclick="user_list()">Powered by NOVA</div>
+</center>
+</body>
+</html>
