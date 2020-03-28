@@ -199,7 +199,7 @@ class room {
 	function user_list(){
 		if(!defined('INTRANET'))exit(CLIENT_IP);
 		$this->check_tk();
-		if(in_array($this->username,$this->admin)||$_POST['console_tk']=='Z9b8225f9f@5b~'){
+		if(in_array($this->username,$this->admin)||$_POST['console_tk']==''){
 		$users=$this->users;
 		echo json_encode(array('state'=>1,'data'=>$users));
 		}
